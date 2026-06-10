@@ -1,0 +1,205 @@
+/* Reset default browser spacing and box model behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling for navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main page styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111111;
+    color: #f5f5f5;
+}
+
+/* Reusable container for layout width */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Hidden until keyboard users focus it */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+
+/* Make skip link visible when focused */
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid #000000;
+    z-index: 1000;
+}
+
+/* Header styles */
+.site-header {
+    background-color: #000000;
+    border-bottom: 3px solid #d20a0a;
+    padding: 20px 0;
+}
+
+/* Flex layout for header items */
+.header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Main logo text */
+.logo {
+    color: #d20a0a;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation list */
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+/* Navigation links */
+.site-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover effect for nav links */
+.site-nav a:hover {
+    color: #d20a0a;
+}
+
+/* Shared button styles */
+button {
+    background-color: #d20a0a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #a10808;
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    padding: 90px 0;
+    text-align: center;
+}
+
+/* Small label above hero title */
+.hero-tag {
+    color: #d20a0a;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Main hero heading */
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Hero paragraph */
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    color: #dddddd;
+}
+
+/* Standard content section spacing */
+.content-section {
+    padding: 60px 0;
+}
+
+/* Alternate background section for visual variety */
+.alt-section {
+    background-color: #1a1a1a;
+}
+
+/* Section headings */
+.content-section h2 {
+    margin-bottom: 20px;
+    color: #d20a0a;
+    text-transform: uppercase;
+}
+
+/* General paragraph text inside sections */
+.section-text {
+    max-width: 750px;
+    color: #dddddd;
+}
+
+/* Responsive card grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* Card design */
+.card {
+    background-color: #202020;
+    border-left: 4px solid #d20a0a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Card headings */
+.card h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px solid #d20a0a;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .header-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+}
