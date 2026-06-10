@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information for the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Night Hub</title>
+
+    <!-- Connect the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip link improves keyboard accessibility -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Website header -->
+    <header class="site-header">
+        <div class="container header-layout">
+            <!-- Main site title -->
+            <h1 class="logo">Fight Night Hub</h1>
+
+            <!-- Main navigation menu -->
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fighters">Fighters</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#highlights">Highlights</a></li>
+                </ul>
+            </nav>
+
+            <!-- Theme toggle button -->
+            <button id="theme-button" type="button">Toggle Theme</button>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+    <main id="main-content">
+        <!-- Hero section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <p class="hero-tag">UFC Inspired Fan Page</p>
+                <h2>Enter the Octagon</h2>
+                <p class="hero-text">
+                    Welcome to Fight Night Hub, a UFC-themed website built for fans who love action,
+                    big matchups, and unforgettable moments.
+                </p>
+                <button id="alert-button" type="button">View Fight Energy</button>
+            </div>
+        </section>
+
+        <!-- Fighters section -->
+        <section id="fighters" class="content-section">
+            <div class="container">
+                <h2>Featured Fighters</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Striker</h3>
+                        <p>
+                            Fast hands, sharp movement, and knockout power make this fighter a fan favorite.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Grappler</h3>
+                        <p>
+                            Elite control, submissions, and relentless pressure define this style in the cage.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Champion</h3>
+                        <p>
+                            A complete mixed martial artist with skill, discipline, and championship mindset.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events section -->
+        <section id="events" class="content-section alt-section">
+            <div class="container">
+                <h2>Fight Card</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Main Event</h3>
+                        <p>Champion vs. Challenger</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Co-Main Event</h3>
+                        <p>Top Contender Battle</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Special Bout</h3>
+                        <p>Rising stars clash under the lights.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights section -->
+        <section id="highlights" class="content-section">
+            <div class="container">
+                <h2>Why Fans Love UFC</h2>
+                <p class="section-text">
+                    UFC combines striking, wrestling, submissions, and nonstop strategy into one of the
+                    most exciting sports in the world.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Fight Night Hub. UFC-inspired design for educational use.</p>
+        </div>
+    </footer>
+
+    <!-- Connect the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
